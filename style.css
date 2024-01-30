@@ -1,0 +1,64 @@
+*{ padding: 0;margin: 0;}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    color: #444;
+    background-color: #fdcfc7;
+    text-align: center;
+}
+.love,.yes, .no{
+    padding-top: 15%;
+}
+
+h1 img{
+    height: 250px;
+    width: 250px;
+}
+
+h2 img{
+    height: 30px;
+    width: 30px;
+    animation: heart 4s linear infinite;
+}
+h3 img{
+    height: 250px;
+    width: 250px;
+    animation: love 3s linear infinite;
+}
+
+@keyframes love{
+    0%{transform: scale(.7);}
+    20%{transform: scale(1);}
+    100%{transform: scale(.7);}
+}
+
+
+
+@keyframes heart{
+    0%{transform: scale(.5);}
+    20%{transform: scale(1.5);}
+    100%{transform: scale(.5);}
+}
+
+h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.love span{
+    color: #e47966;
+}
+.love a{
+    text-decoration: none;
+    background: rgb(255, 229, 229);
+    padding: 10px;
+    margin: 5px 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+#no{
+    color: rgb(167, 25, 25);
+}
+#yes{
+    color: rgb(54, 168, 54);
+}
